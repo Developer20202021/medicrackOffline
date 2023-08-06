@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:the_royal_academy/AdminPannel/AddNewAttendance.dart';
+import 'package:the_royal_academy/AdminPannel/AllClass/AllClass.dart';
 import 'package:the_royal_academy/AdminPannel/AllNewStudent.dart';
 import 'package:the_royal_academy/AdminPannel/PerStudentAttendance.dart';
 import 'package:the_royal_academy/AllExam.dart';
@@ -35,7 +36,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: OurClass(),
+      home: AllClass(),
     );
   }
 }
