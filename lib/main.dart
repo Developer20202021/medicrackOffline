@@ -3,6 +3,7 @@ import 'package:the_royal_academy/AdminPannel/AddNewAttendance.dart';
 import 'package:the_royal_academy/AdminPannel/AllClass/AllClass.dart';
 import 'package:the_royal_academy/AdminPannel/AllNewStudent.dart';
 import 'package:the_royal_academy/AdminPannel/AllVideo/PerClassVideo.dart';
+import 'package:the_royal_academy/AdminPannel/AllVideo/UploadVideoClass.dart';
 import 'package:the_royal_academy/AdminPannel/PerStudentAttendance.dart';
 import 'package:the_royal_academy/AllExam.dart';
 import 'package:the_royal_academy/Home.dart';
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: PerClassVideo(),
+      home: UploadVideoClass(),
     );
   }
 }
