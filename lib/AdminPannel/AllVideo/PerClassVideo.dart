@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_royal_academy/AdminPannel/AllVideo/UploadVideoClass.dart';
 
 class PerClassVideo extends StatefulWidget {
   const PerClassVideo({super.key});
@@ -133,7 +134,10 @@ class _PerClassVideoState extends State<PerClassVideo> {
 
         floatingActionButton: FloatingActionButton(onPressed: (){
 
-
+             Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const UploadVideoClass()),
+                  );
         },
         
         child: Icon(Icons.upload_file, color: Colors.white,),

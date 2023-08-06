@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:the_royal_academy/AdminPannel/AllNewStudent.dart';
+import 'package:the_royal_academy/AdminPannel/AllVideo/PerClassVideo.dart';
 
 class AllClass extends StatefulWidget {
   const AllClass({super.key});
@@ -146,10 +147,7 @@ class _AllClassState extends State<AllClass> {
             ),
             child: Column(
               children: [
-                Container(
-                  child: Icon(Icons.person, size: 24, color:Colors.pink),
-                  padding: const EdgeInsets.all(12),
-                ),
+                
         
         
         
@@ -235,6 +233,12 @@ class _AllClassState extends State<AllClass> {
                           
                       TextButton(
                          onPressed: () {
+
+                          
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => const PerClassVideo()),
+                        );
            },
                                                 child: Text("All Video",
                                                     style: TextStyle(
