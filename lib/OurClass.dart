@@ -90,90 +90,129 @@ class _OurClassState extends State<OurClass> {
     super.dispose();
   }
 
-  List AllClassInfo = [
-
-    {"ClassTitle":"লেকচার - ১",
-    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
-    "ClassTime":"10",
-    "VideoID":"8aW7NqTFhV8"
+   List AllClassInfo = [
+    
+      
+    {
+      "ClassTitle": "লেকচার - ১",
+      "ClassName": "8",
+      "SubjectName": "Physics",
+      "VideoUploadTime":"01/02/2023 10:12AM",
+      "ClassNoteLink":
+          "https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+      "VideoDuration": "10",
+      "VideoID": "8aW7NqTFhV8"
     },
 
-    {"ClassTitle":"লেকচার - ১",
-    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
-    "ClassTime":"10",
-    "VideoID":"8aW7NqTFhV8"
+
+
+
+    {
+      "ClassTitle": "লেকচার - ১",
+      "ClassName": "8",
+      "SubjectName": "Physics",
+      "VideoUploadTime":"01/02/2023 10:12AM",
+      "ClassNoteLink":
+          "https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+      "VideoDuration": "10",
+      "VideoID": "8aW7NqTFhV8"
     },
 
-    {"ClassTitle":"লেকচার - ১",
-    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
-    "ClassTime":"10",
-    "VideoID":"8aW7NqTFhV8"
+
+    {
+      "ClassTitle": "লেকচার - ১",
+      "ClassName": "8",
+      "SubjectName": "Physics",
+      "VideoUploadTime":"01/02/2023 10:12AM",
+      "ClassNoteLink":
+          "https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+      "VideoDuration": "10",
+      "VideoID": "8aW7NqTFhV8"
     },
 
-    {"ClassTitle":"লেকচার - ১",
-    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
-    "ClassTime":"10",
-    "VideoID":"8aW7NqTFhV8"
+
+    {
+      "ClassTitle": "লেকচার - ১",
+      "ClassName": "8",
+      "SubjectName": "Physics",
+      "VideoUploadTime":"01/02/2023 10:12AM",
+      "ClassNoteLink":
+          "https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+      "VideoDuration": "10",
+      "VideoID": "8aW7NqTFhV8"
     },
 
-    {"ClassTitle":"লেকচার - ১",
-    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
-    "ClassTime":"10",
-    "VideoID":"8aW7NqTFhV8"
+
+    {
+      "ClassTitle": "লেকচার - ১",
+      "ClassName": "8",
+      "SubjectName": "Physics",
+      "VideoUploadTime":"01/02/2023 10:12AM",
+      "ClassNoteLink":
+          "https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+      "VideoDuration": "10",
+      "VideoID": "8aW7NqTFhV8"
     },
 
-    {"ClassTitle":"লেকচার - ১",
-    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
-    "ClassTime":"10",
-    "VideoID":"8aW7NqTFhV8"
+
+    {
+      "ClassTitle": "লেকচার - ১",
+      "ClassName": "8",
+      "SubjectName": "Physics",
+      "VideoUploadTime":"01/02/2023 10:12AM",
+      "ClassNoteLink":
+          "https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+      "VideoDuration": "10",
+      "VideoID": "8aW7NqTFhV8"
     },
 
-    {"ClassTitle":"লেকচার - ১",
-    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
-    "ClassTime":"10",
-    "VideoID":"8aW7NqTFhV8"
+
+    {
+      "ClassTitle": "লেকচার - ১",
+      "ClassName": "8",
+      "SubjectName": "Physics",
+      "VideoUploadTime":"01/02/2023 10:12AM",
+      "ClassNoteLink":
+          "https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+      "VideoDuration": "10",
+      "VideoID": "8aW7NqTFhV8"
     },
 
-    {"ClassTitle":"লেকচার - ১",
-    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
-    "ClassTime":"10",
-    "VideoID":"8aW7NqTFhV8"
+
+    {
+      "ClassTitle": "লেকচার - ১",
+      "ClassName": "8",
+      "SubjectName": "Physics",
+      "VideoUploadTime":"01/02/2023 10:12AM",
+      "ClassNoteLink":
+          "https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+      "VideoDuration": "10",
+      "VideoID": "8aW7NqTFhV8"
     },
 
-    {"ClassTitle":"লেকচার - ১",
-    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
-    "ClassTime":"10",
-    "VideoID":"8aW7NqTFhV8"
+
+    {
+      "ClassTitle": "লেকচার - ১",
+      "ClassName": "8",
+      "SubjectName": "Physics",
+      "VideoUploadTime":"01/02/2023 10:12AM",
+      "ClassNoteLink":
+          "https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+      "VideoDuration": "10",
+      "VideoID": "8aW7NqTFhV8"
     },
 
-    {"ClassTitle":"লেকচার - ১",
-    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
-    "ClassTime":"10",
-    "VideoID":"8aW7NqTFhV8"
+
+    {
+      "ClassTitle": "লেকচার - ১",
+      "ClassName": "8",
+      "SubjectName": "Physics",
+      "VideoUploadTime":"01/02/2023 10:12AM",
+      "ClassNoteLink":
+          "https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+      "VideoDuration": "10",
+      "VideoID": "8aW7NqTFhV8"
     },
-
-    {"ClassTitle":"লেকচার - ১",
-    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
-    "ClassTime":"10",
-    "VideoID":"8aW7NqTFhV8"
-    },
-
-    {"ClassTitle":"লেকচার - ১",
-    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
-    "ClassTime":"10",
-    "VideoID":"Jq9_Yn4KFZY"
-    },
-
-    {"ClassTitle":"লেকচার - ১",
-    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
-    "ClassTime":"10",
-    "VideoID":"YchuLUKuR-4"
-    },
-   
-
-
-
-
   ];
 
   @override
