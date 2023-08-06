@@ -90,16 +90,103 @@ class _OurClassState extends State<OurClass> {
     super.dispose();
   }
 
+  List AllClassInfo = [
+
+    {"ClassTitle":"লেকচার - ১",
+    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+    "ClassTime":"10",
+    "VideoID":"8aW7NqTFhV8"
+    },
+
+    {"ClassTitle":"লেকচার - ১",
+    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+    "ClassTime":"10",
+    "VideoID":"8aW7NqTFhV8"
+    },
+
+    {"ClassTitle":"লেকচার - ১",
+    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+    "ClassTime":"10",
+    "VideoID":"8aW7NqTFhV8"
+    },
+
+    {"ClassTitle":"লেকচার - ১",
+    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+    "ClassTime":"10",
+    "VideoID":"8aW7NqTFhV8"
+    },
+
+    {"ClassTitle":"লেকচার - ১",
+    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+    "ClassTime":"10",
+    "VideoID":"8aW7NqTFhV8"
+    },
+
+    {"ClassTitle":"লেকচার - ১",
+    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+    "ClassTime":"10",
+    "VideoID":"8aW7NqTFhV8"
+    },
+
+    {"ClassTitle":"লেকচার - ১",
+    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+    "ClassTime":"10",
+    "VideoID":"8aW7NqTFhV8"
+    },
+
+    {"ClassTitle":"লেকচার - ১",
+    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+    "ClassTime":"10",
+    "VideoID":"8aW7NqTFhV8"
+    },
+
+    {"ClassTitle":"লেকচার - ১",
+    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+    "ClassTime":"10",
+    "VideoID":"8aW7NqTFhV8"
+    },
+
+    {"ClassTitle":"লেকচার - ১",
+    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+    "ClassTime":"10",
+    "VideoID":"8aW7NqTFhV8"
+    },
+
+    {"ClassTitle":"লেকচার - ১",
+    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+    "ClassTime":"10",
+    "VideoID":"8aW7NqTFhV8"
+    },
+
+    {"ClassTitle":"লেকচার - ১",
+    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+    "ClassTime":"10",
+    "VideoID":"Jq9_Yn4KFZY"
+    },
+
+    {"ClassTitle":"লেকচার - ১",
+    "ClassNoteLink":"https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",
+    "ClassTime":"10",
+    "VideoID":"YchuLUKuR-4"
+    },
+   
+
+
+
+
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.pink),
-        leading: IconButton(onPressed: () {
-          Navigator.pop(context, true);
-
-        }, icon: Icon(Icons.chevron_left)),
+        leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context, true);
+            },
+            icon: Icon(Icons.chevron_left)),
         title: const Text(
           "Your Class",
           style: TextStyle(color: Colors.black),
@@ -133,531 +220,145 @@ class _OurClassState extends State<OurClass> {
                 ListTile(
                   trailing: Text("${_start}"),
                 ),
+
+
+
+        for(var classInfo in AllClassInfo)
+
+
+
                 ExpandableNotifier(
                   // <-- Provides ExpandableController to its children
                   child: Padding(
-                    padding: const EdgeInsets.all(20.0),
+                    padding: const EdgeInsets.all(8.0),
                     child: Column(
                       children: [
-                        Expandable(
-                          // <-- Driven by ExpandableController from ExpandableNotifier
-                          collapsed: ExpandableButton(
-                            // <-- Expands when tapped on the cover photo
-                            child: Text("লেকচার - ১",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold)),
-                          ),
-                          expanded: Column(children: [
-                            ListTile(
-                              leading: Icon(
-                                Icons.video_file_rounded,
-                                color: Colors.pink,
-                              ),
-                              trailing: TextButton(
-                                onPressed: () {
-                                  _controller.load("8aW7NqTFhV8");
-                                  _start = 10;
-                                  startTimer();
-                                },
-                                child: Text("Class",
-                                    style: TextStyle(color: Colors.white)),
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStatePropertyAll<Color>(
-                                          Colors.pink),
-                                ),
-                              ),
-                              title: Text("লেকচার - ১ এর ক্লাস",
-                                  style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold)),
-                            ),
-                            SizedBox(
-                              width: 20,
-                              height: 2,
-                            ),
-                            ListTile(
-                              leading: Icon(Icons.note, color: Colors.pink),
-                              trailing: TextButton(
-                                onPressed: () {
+                        // every expandable widget
+                        Card(
+                            child: Padding(
+                                padding: EdgeInsets.only(
+                                    top: 16.0,
+                                    left: 6.0,
+                                    right: 6.0,
+                                    bottom: 6.0),
+                                child: Theme(
+                                    data: Theme.of(context).copyWith(
+                                        dividerColor: Colors.transparent),
+                                    child: ExpansionTile(
+                                        leading: Icon(
+                                          Icons.live_tv,
+                                          color: Colors.pink,
+                                          size: 40,
+                                        ),
+                                        title: Text(
+                                          '${classInfo["ClassTitle"]}',
+                                          style: TextStyle(
+                                              color: Color.fromARGB(
+                                                  255, 48, 2, 56),
+                                              fontWeight: FontWeight.bold,
+                                              fontSize: 16),
+                                        ),
+                                        children: <Widget>[
+                                          //Expandable inner part
 
-                                   Navigator.push(
-                                        context,
-                                        MaterialPageRoute(builder: (context) => const LecturePDF(pdfUrl: "https://drive.google.com/file/d/1C5iYfIYxFNa58MLZj92Csp18l41iAFf3/view?usp=share_link",)),
-                                      );
-
-
-
-                                },
-                                child: Text("Note",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    )),
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStatePropertyAll<Color>(
-                                          Colors.pink),
-                                ),
-                              ),
-                              title: Text(
-                                "লেকচার - ১ এর নোট",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            SizedBox(
-                              width: 20,
-                              height: 2,
-                            ),
-                            ListTile(
-                              leading: Icon(
-                                Icons.question_mark,
-                                color: Colors.pink,
-                              ),
-                              trailing: TextButton(
-                                onPressed: () {},
-                                child: Text("প্রশ্ন",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    )),
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStatePropertyAll<Color>(
-                                          Colors.pink),
-                                ),
-                              ),
-                              title: Text(
-                                "তোমার প্রশ্ন জানাও",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            SizedBox(
-                              width: 20,
-                              height: 2,
-                            ),
-                           
-                            ExpandableButton(
-                              // <-- Collapses when tapped on
-                              child: Icon(Icons.arrow_upward),
-                            ),
-                          ]),
-                        ),
+                                          ListTile(
+                                            leading: Icon(
+                                              Icons.video_file_rounded,
+                                              color: Colors.pink,
+                                            ),
+                                            trailing: TextButton(
+                                              onPressed: () {
+                                                _controller.load("${classInfo["VideoID"]}");
+                                                _start = 10;
+                                                startTimer();
+                                              },
+                                              child: Text("Class",
+                                                  style: TextStyle(
+                                                      color: Colors.white)),
+                                              style: ButtonStyle(
+                                                backgroundColor:
+                                                    MaterialStatePropertyAll<
+                                                        Color>(Colors.pink),
+                                              ),
+                                            ),
+                                            title: Text("${classInfo["ClassTitle"]} এর ক্লাস",
+                                                style: TextStyle(
+                                                    fontSize: 18,
+                                                    fontWeight:
+                                                        FontWeight.bold)),
+                                          ),
+                                          SizedBox(
+                                            width: 20,
+                                            height: 2,
+                                          ),
+                                          ListTile(
+                                            leading: Icon(Icons.note,
+                                                color: Colors.pink),
+                                            trailing: TextButton(
+                                              onPressed: () {
+                                                Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                      builder: (context) =>
+                                                           LecturePDF(
+                                                            pdfUrl:
+                                                                "${classInfo["ClassNoteLink"]}",
+                                                          )),
+                                                );
+                                              },
+                                              child: Text("Note",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  )),
+                                              style: ButtonStyle(
+                                                backgroundColor:
+                                                    MaterialStatePropertyAll<
+                                                        Color>(Colors.pink),
+                                              ),
+                                            ),
+                                            title: Text(
+                                              "${classInfo["ClassTitle"]} এর নোট",
+                                              style: TextStyle(
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold),
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            width: 20,
+                                            height: 2,
+                                          ),
+                                          ListTile(
+                                            leading: Icon(
+                                              Icons.question_mark,
+                                              color: Colors.pink,
+                                            ),
+                                            trailing: TextButton(
+                                              onPressed: () {},
+                                              child: Text("প্রশ্ন",
+                                                  style: TextStyle(
+                                                    color: Colors.white,
+                                                  )),
+                                              style: ButtonStyle(
+                                                backgroundColor:
+                                                    MaterialStatePropertyAll<
+                                                        Color>(Colors.pink),
+                                              ),
+                                            ),
+                                            title: Text(
+                                              "তোমার প্রশ্ন জানাও",
+                                              style: TextStyle(
+                                                  fontSize: 18,
+                                                  fontWeight: FontWeight.bold),
+                                            ),
+                                          ),
+                                          SizedBox(
+                                            width: 20,
+                                            height: 2,
+                                          ),
+                                        ])))),
                       ],
                     ),
                   ),
-                ),
-
-                
-                Divider(
-                  thickness: 3,
-                ),
-                ExpandableNotifier(
-                  // <-- Provides ExpandableController to its children
-                  child: Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Column(
-                      children: [
-                        Expandable(
-                          // <-- Driven by ExpandableController from ExpandableNotifier
-                          collapsed: ExpandableButton(
-                            // <-- Expands when tapped on the cover photo
-                            child: Text("লেকচার - ১",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold)),
-                          ),
-                          expanded: Column(children: [
-                            ListTile(
-                              leading: Icon(
-                                Icons.video_file_rounded,
-                                color: Colors.pink,
-                              ),
-                              trailing: TextButton(
-                                onPressed: () {
-                                  _controller.load("SC111MylZgk");
-                                },
-                                child: Text("Class",
-                                    style: TextStyle(color: Colors.white)),
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStatePropertyAll<Color>(
-                                          Colors.pink),
-                                ),
-                              ),
-                              title: Text("লেকচার - ১ এর ক্লাস",
-                                  style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold)),
-                            ),
-                            SizedBox(
-                              width: 20,
-                              height: 2,
-                            ),
-                            ListTile(
-                              leading: Icon(Icons.note, color: Colors.pink),
-                              trailing: TextButton(
-                                onPressed: () {},
-                                child: Text("Note",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    )),
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStatePropertyAll<Color>(
-                                          Colors.pink),
-                                ),
-                              ),
-                              title: Text(
-                                "লেকচার - ১ এর নোট",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            SizedBox(
-                              width: 20,
-                              height: 2,
-                            ),
-
-                            ListTile(
-                              leading: Icon(
-                                Icons.question_mark,
-                                color: Colors.pink,
-                              ),
-                              trailing: TextButton(
-                                onPressed: () {},
-                                child: Text("প্রশ্ন",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    )),
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStatePropertyAll<Color>(
-                                          Colors.pink),
-                                ),
-                              ),
-                              title: Text(
-                                "তোমার প্রশ্ন জানাও",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            ExpandableButton(
-                              // <-- Collapses when tapped on
-                              child: Icon(Icons.arrow_upward),
-                            ),
-                          ]),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Divider(
-                  thickness: 3,
-                ),
-                ExpandableNotifier(
-                  // <-- Provides ExpandableController to its children
-                  child: Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Column(
-                      children: [
-                        Expandable(
-                          // <-- Driven by ExpandableController from ExpandableNotifier
-                          collapsed: ExpandableButton(
-                            // <-- Expands when tapped on the cover photo
-                            child: Text("লেকচার - ১",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold)),
-                          ),
-                          expanded: Column(children: [
-                            ListTile(
-                              leading: Icon(
-                                Icons.video_file_rounded,
-                                color: Colors.pink,
-                              ),
-                              trailing: TextButton(
-                                onPressed: () {
-                                  _controller.load("6fIfwkVuhiI");
-                                },
-                                child: Text("Class",
-                                    style: TextStyle(color: Colors.white)),
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStatePropertyAll<Color>(
-                                          Colors.pink),
-                                ),
-                              ),
-                              title: Text("লেকচার - ১ এর ক্লাস",
-                                  style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold)),
-                            ),
-                            SizedBox(
-                              width: 20,
-                              height: 2,
-                            ),
-                            ListTile(
-                              leading: Icon(Icons.note, color: Colors.pink),
-                              trailing: TextButton(
-                                onPressed: () {},
-                                child: Text("Note",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    )),
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStatePropertyAll<Color>(
-                                          Colors.pink),
-                                ),
-                              ),
-                              title: Text(
-                                "লেকচার - ১ এর নোট",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            SizedBox(
-                              width: 20,
-                              height: 2,
-                            ),
-
-                            ListTile(
-                              leading: Icon(
-                                Icons.question_mark,
-                                color: Colors.pink,
-                              ),
-                              trailing: TextButton(
-                                onPressed: () {},
-                                child: Text("প্রশ্ন",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    )),
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStatePropertyAll<Color>(
-                                          Colors.pink),
-                                ),
-                              ),
-                              title: Text(
-                                "তোমার প্রশ্ন জানাও",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            ExpandableButton(
-                              // <-- Collapses when tapped on
-                              child: Icon(Icons.arrow_upward),
-                            ),
-                          ]),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Divider(
-                  thickness: 3,
-                ),
-                ExpandableNotifier(
-                  // <-- Provides ExpandableController to its children
-                  child: Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Column(
-                      children: [
-                        Expandable(
-                          // <-- Driven by ExpandableController from ExpandableNotifier
-                          collapsed: ExpandableButton(
-                            // <-- Expands when tapped on the cover photo
-                            child: Text("লেকচার - ২",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold)),
-                          ),
-                          expanded: Column(children: [
-                            ListTile(
-                              leading: Icon(
-                                Icons.video_file_rounded,
-                                color: Colors.pink,
-                              ),
-                              trailing: TextButton(
-                                onPressed: () {
-                                  _controller.load("6fIfwkVuhiI");
-                                },
-                                child: Text("Class",
-                                    style: TextStyle(color: Colors.white)),
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStatePropertyAll<Color>(
-                                          Colors.pink),
-                                ),
-                              ),
-                              title: Text("লেকচার - ২ এর ক্লাস",
-                                  style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold)),
-                            ),
-                            SizedBox(
-                              width: 20,
-                              height: 2,
-                            ),
-                            ListTile(
-                              leading: Icon(Icons.note, color: Colors.pink),
-                              trailing: TextButton(
-                                onPressed: () {},
-                                child: Text("Note",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    )),
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStatePropertyAll<Color>(
-                                          Colors.pink),
-                                ),
-                              ),
-                              title: Text(
-                                "লেকচার - ২ এর নোট",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            SizedBox(
-                              width: 20,
-                              height: 2,
-                            ),
-                            ListTile(
-                              leading: Icon(
-                                Icons.question_mark,
-                                color: Colors.pink,
-                              ),
-                              trailing: TextButton(
-                                onPressed: () {},
-                                child: Text("প্রশ্ন",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    )),
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStatePropertyAll<Color>(
-                                          Colors.pink),
-                                ),
-                              ),
-                              title: Text(
-                                "তোমার প্রশ্ন জানাও",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            ExpandableButton(
-                              // <-- Collapses when tapped on
-                              child: Icon(Icons.arrow_upward),
-                            ),
-                          ]),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Divider(
-                  thickness: 3,
-                ),
-                ExpandableNotifier(
-                  // <-- Provides ExpandableController to its children
-                  child: Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Column(
-                      children: [
-                        Expandable(
-                          // <-- Driven by ExpandableController from ExpandableNotifier
-                          collapsed: ExpandableButton(
-                            // <-- Expands when tapped on the cover photo
-                            child: Text("লেকচার - ৩",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold)),
-                          ),
-                          expanded: Column(children: [
-                            ListTile(
-                              leading: Icon(
-                                Icons.video_file_rounded,
-                                color: Colors.pink,
-                              ),
-                              trailing: TextButton(
-                                onPressed: () {
-                                  _controller.load("6fIfwkVuhiI");
-                                },
-                                child: Text("Class",
-                                    style: TextStyle(color: Colors.white)),
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStatePropertyAll<Color>(
-                                          Colors.pink),
-                                ),
-                              ),
-                              title: Text("লেকচার - ৩ এর ক্লাস",
-                                  style: TextStyle(
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.bold)),
-                            ),
-                            SizedBox(
-                              width: 20,
-                              height: 2,
-                            ),
-                            ListTile(
-                              leading: Icon(Icons.note, color: Colors.pink),
-                              trailing: TextButton(
-                                onPressed: () {},
-                                child: Text("Note",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    )),
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStatePropertyAll<Color>(
-                                          Colors.pink),
-                                ),
-                              ),
-                              title: Text(
-                                "লেকচার - ৩ এর নোট",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            SizedBox(
-                              width: 20,
-                              height: 2,
-                            ),
-
-                            ListTile(
-                              leading: Icon(
-                                Icons.question_mark,
-                                color: Colors.pink,
-                              ),
-                              trailing: TextButton(
-                                onPressed: () {},
-                                child: Text("প্রশ্ন",
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                    )),
-                                style: ButtonStyle(
-                                  backgroundColor:
-                                      MaterialStatePropertyAll<Color>(
-                                          Colors.pink),
-                                ),
-                              ),
-                              title: Text(
-                                "তোমার প্রশ্ন জানাও",
-                                style: TextStyle(
-                                    fontSize: 18, fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            ExpandableButton(
-                              // <-- Collapses when tapped on
-                              child: Icon(Icons.arrow_upward),
-                            ),
-                          ]),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-                Divider(
-                  thickness: 3,
                 ),
               ],
             ),

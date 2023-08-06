@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:the_royal_academy/AdminPannel/AddNewAttendance.dart';
 import 'package:the_royal_academy/AdminPannel/AllNewStudent.dart';
 import 'package:the_royal_academy/AdminPannel/PerStudentAttendance.dart';
 import 'package:the_royal_academy/AllExam.dart';
 import 'package:the_royal_academy/Home.dart';
+import 'package:the_royal_academy/MCQExam/PerMCQ.dart';
 import 'package:the_royal_academy/OurClass.dart';
 import 'package:the_royal_academy/YourQuestion.dart';
 
@@ -33,7 +35,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Home(),
+      home: OurClass(),
     );
   }
 }
