@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:the_royal_academy/AdminPannel/AllClass/AddNewClass.dart';
 import 'package:the_royal_academy/AdminPannel/AllNewStudent.dart';
 import 'package:the_royal_academy/AdminPannel/AllVideo/PerClassVideo.dart';
 
@@ -21,77 +22,129 @@ class _AllClassState extends State<AllClass> {
       "SubjectName":"English 1st Paper",
       "StudentNumber": "100",
       "ClassYear":"2022",
+      "TutorName":"Mahadi Hasan",
+      "TutorID":"56jas34",
+      "TutorPhoneNumber":"01767298388"
 
     },
 
 
-       {
+     {
 
       "ClassName": "8",
       "SubjectName":"English 1st Paper",
       "StudentNumber": "100",
       "ClassYear":"2022",
+      "TutorName":"Mahadi Hasan",
+      "TutorID":"56jas34",
+      "TutorPhoneNumber":"01767298388"
 
     },
 
 
-       {
+     {
 
       "ClassName": "8",
       "SubjectName":"English 1st Paper",
       "StudentNumber": "100",
       "ClassYear":"2022",
+      "TutorName":"Mahadi Hasan",
+      "TutorID":"56jas34",
+      "TutorPhoneNumber":"01767298388"
 
     },
 
 
-       {
+     {
 
       "ClassName": "8",
       "SubjectName":"English 1st Paper",
       "StudentNumber": "100",
       "ClassYear":"2022",
+      "TutorName":"Mahadi Hasan",
+      "TutorID":"56jas34",
+      "TutorPhoneNumber":"01767298388"
 
     },
 
 
-       {
+     {
 
       "ClassName": "8",
       "SubjectName":"English 1st Paper",
       "StudentNumber": "100",
       "ClassYear":"2022",
+      "TutorName":"Mahadi Hasan",
+      "TutorID":"56jas34",
+      "TutorPhoneNumber":"01767298388"
 
     },
 
 
-       {
+     {
 
       "ClassName": "8",
       "SubjectName":"English 1st Paper",
       "StudentNumber": "100",
       "ClassYear":"2022",
+      "TutorName":"Mahadi Hasan",
+      "TutorID":"56jas34",
+      "TutorPhoneNumber":"01767298388"
 
     },
 
-       {
+
+     {
 
       "ClassName": "8",
       "SubjectName":"English 1st Paper",
       "StudentNumber": "100",
       "ClassYear":"2022",
+      "TutorName":"Mahadi Hasan",
+      "TutorID":"56jas34",
+      "TutorPhoneNumber":"01767298388"
 
     },
 
 
-       {
+     {
 
       "ClassName": "8",
       "SubjectName":"English 1st Paper",
       "StudentNumber": "100",
       "ClassYear":"2022",
+      "TutorName":"Mahadi Hasan",
+      "TutorID":"56jas34",
+      "TutorPhoneNumber":"01767298388"
 
     },
+
+
+     {
+
+      "ClassName": "8",
+      "SubjectName":"English 1st Paper",
+      "StudentNumber": "100",
+      "ClassYear":"2022",
+      "TutorName":"Mahadi Hasan",
+      "TutorID":"56jas34",
+      "TutorPhoneNumber":"01767298388"
+
+    },
+
+
+     {
+
+      "ClassName": "8",
+      "SubjectName":"English 1st Paper",
+      "StudentNumber": "100",
+      "ClassYear":"2022",
+      "TeacherName":"Mahadi Hasan",
+      "TeacherID":"56jas34",
+      "TeacherPhoneNumber":"01767298388"
+
+    },
+
 
 
     
@@ -117,6 +170,24 @@ class _AllClassState extends State<AllClass> {
           bottomOpacity: 0.0,
           elevation: 0.0,
         ),
+
+        floatingActionButton:FloatingActionButton.extended(
+              backgroundColor:  Colors.pink,
+              foregroundColor: Colors.white,
+              onPressed: () {
+
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const AddNewClass()),
+                );
+                // Respond to button press
+              },
+              icon: Icon(Icons.add),
+              label: Text('Add Class'),
+            ),
+
+
+
         body: SingleChildScrollView(
           child: Padding(
               padding: const EdgeInsets.all(20.0),
@@ -132,7 +203,7 @@ class _AllClassState extends State<AllClass> {
                   Container(
         
             width: 400,
-          margin: const EdgeInsets.only(bottom: 20.0),
+          margin: const EdgeInsets.only(bottom: 40.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               color: Colors.white,

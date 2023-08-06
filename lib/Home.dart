@@ -567,7 +567,7 @@ SizedBox(height: 30,),
       child: ListView(children: [
         UserAccountsDrawerHeader(
               accountName: Text("Mahadi Hasan"),
-              accountEmail: Text("royal@gmail.com"),
+              accountEmail: Text("medicrack@gmail.com"),
               currentAccountPicture: CircleAvatar(
                 backgroundImage: NetworkImage(
                     "https://images.pexels.com/photos/7656336/pexels-photo-7656336.jpeg?auto=compress&cs=tinysrgb&w=1600"),

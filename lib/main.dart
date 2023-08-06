@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:the_royal_academy/AdminPannel/AddNewAttendance.dart';
+import 'package:the_royal_academy/AdminPannel/AllClass/AddNewClass.dart';
 import 'package:the_royal_academy/AdminPannel/AllClass/AllClass.dart';
 import 'package:the_royal_academy/AdminPannel/AllNewStudent.dart';
 import 'package:the_royal_academy/AdminPannel/AllVideo/PerClassVideo.dart';
