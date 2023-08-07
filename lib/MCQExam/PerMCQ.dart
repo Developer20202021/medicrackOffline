@@ -12,39 +12,76 @@ class _PerMCQState extends State<PerMCQ> {
 
   List Question = [
     {
-      "questionNumber": 1,
-      "questionName": "নিচের কোনটি সঠিক?",
-      "options": ["ok", "Yes", "color", "No"]
+      "McqTitle": "নিচের কোনটি সঠিক?",
+      "QuestionId": "232423",
+      "options": ["ok", "Yes", "color", "No"],
+      "CorrectAnswer": "ok"
     },
     {
-      "questionNumber": 1,
-      "questionName": "নিচের কোনটি সঠিক?",
-      "options": ["ok1", "Yes1", "color1", "No1"]
+      "McqTitle": "নিচের কোনটি সঠিক না ?",
+      "QuestionId": "232423",
+      "options": ["ok", "Yes", "color", "No"],
+      "CorrectAnswer": "ok"
     },
     {
-      "questionNumber": 1,
-      "questionName": "নিচের কোনটি সঠিক?",
-      "options": ["ok2", "Yes2", "color2", "No2"]
+      "McqTitle": "নিচের কোনটি সঠিক ok?",
+      "QuestionId": "232423",
+      "options": ["ok", "Yes", "color", "No"],
+      "CorrectAnswer": "ok"
     },
     {
-      "questionNumber": 1,
-      "questionName": "নিচের কোনটি সঠিক?",
-      "options": ["ok3", "Yes3", "color3", "No3"]
+      "McqTitle": "নিচের কোনটি সঠিক? yes",
+      "QuestionId": "232423",
+      "options": ["ok", "Yes", "color", "No"],
+      "CorrectAnswer": "ok"
     },
     {
-      "questionNumber": 1,
-      "questionName": "নিচের কোনটি সঠিক?",
-      "options": ["ok4", "Yes4", "color4", "No4"]
+      "McqTitle": "নিচের কোনটি সঠিক?",
+      "QuestionId": "232423",
+      "options": ["ok", "Yes", "color", "No"],
+      "CorrectAnswer": "ok"
     },
     {
-      "questionNumber": 1,
-      "questionName": "নিচের কোনটি সঠিক?",
-      "options": ["ok5", "Yes5", "color5", "No5"]
+      "McqTitle": "নিচের কোনটি সঠিক?",
+      "QuestionId": "232423",
+      "options": ["ok", "Yes", "color", "No"],
+      "CorrectAnswer": "ok"
     },
     {
-      "questionNumber": 1,
-      "questionName": "নিচের কোনটি সঠিক?",
-      "options": ["ok6", "Yes6", "color6", "No6"]
+      "McqTitle": "নিচের কোনটি সঠিক?",
+      "QuestionId": "232423",
+      "options": ["ok", "Yes", "color", "No"],
+      "CorrectAnswer": "ok"
+    },
+    {
+      "McqTitle": "নিচের কোনটি সঠিক?",
+      "QuestionId": "232423",
+      "options": ["ok", "Yes", "color", "No"],
+      "CorrectAnswer": "ok"
+    },
+    {
+      "McqTitle": "নিচের কোনটি সঠিক?",
+      "QuestionId": "232423",
+      "options": ["ok", "Yes", "color", "No"],
+      "CorrectAnswer": "ok"
+    },
+    {
+      "McqTitle": "নিচের কোনটি সঠিক?",
+      "QuestionId": "232423",
+      "options": ["ok", "Yes", "color", "No"],
+      "CorrectAnswer": "ok"
+    },
+    {
+      "McqTitle": "নিচের কোনটি সঠিক?",
+      "QuestionId": "232423",
+      "options": ["ok", "Yes", "color", "No"],
+      "CorrectAnswer": "ok"
+    },
+    {
+      "McqTitle": "নিচের কোনটি সঠিক?",
+      "QuestionId": "232423",
+      "options": ["ok", "Yes", "color", "No"],
+      "CorrectAnswer": "ok"
     },
   ];
 
@@ -91,15 +128,90 @@ class _PerMCQState extends State<PerMCQ> {
           child: Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(children: [
-                Container(
+
+
+
+
+                 Container(
+                  width: 400,
+                  margin: const EdgeInsets.only(bottom: 40.0),
                   decoration: BoxDecoration(
-                    border: Border.all(
-                      color: Color(0xFFF05A22),
-                      style: BorderStyle.solid,
-                      width: 1.0,
-                    ),
-                    color: Colors.transparent,
-                    borderRadius: BorderRadius.circular(30.0),
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3),
+                      ),
+                    ],
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      children: [
+                  
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Text("Subject Name: Physics", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                  
+                  
+                             Text("Marks: 20", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                          ],
+                        ),
+                  
+                        SizedBox(
+                          height: 10,
+                        ),
+                  
+                          Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Text("Topic Name: Physics", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                  
+                  
+                             Text("Time: 20", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                          ],
+                        ),
+                  
+                  
+                  
+                  
+                  
+                      ]),
+                  )),
+
+
+                    SizedBox(height: 10,),
+
+
+
+
+
+
+
+
+
+
+
+
+                //QUESTION CARD 
+                Container(
+                  width: 400,
+                  margin: const EdgeInsets.only(bottom: 40.0),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 7,
+                        offset: Offset(0, 3),
+                      ),
+                    ],
                   ),
                   child: Column(
                     children: [
@@ -109,7 +221,7 @@ class _PerMCQState extends State<PerMCQ> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Text(
-                          "নিচের কোনটি সঠিক?",
+                          "${ListNumber + 1}.${Question[ListNumber]["McqTitle"]}",
                           style: TextStyle(
                               fontSize: 18, fontWeight: FontWeight.bold),
                         ),
@@ -130,21 +242,24 @@ class _PerMCQState extends State<PerMCQ> {
                             setSelectedQuestion(val);
                           },
                         ),
-
-                      if (ListNumber + 1 < Question.length) TextButton(
+                      if (ListNumber + 1 < Question.length)
+                        Container(
+                          child: TextButton(
                               onPressed: () {
-                             
-                                  setState(() {
-                                    ListNumber = ListNumber + 1;
-                                  });
-                            
+                                setState(() {
+                                  ListNumber = ListNumber + 1;
+                                });
                               },
-                              child: Text("Next")) else TextButton(
-                              onPressed: () {
-                             
-                            
-                              },
-                              child: Text("Complete"))
+                              child: Text("Next", style: TextStyle(color: Colors.white),), style: ButtonStyle(
+                         
+                backgroundColor: MaterialStatePropertyAll<Color>(Colors.pink),
+              ),),
+                        )
+                      else
+                         Container(width: 150, child:TextButton(onPressed: (){}, child: Text("Complete", style: TextStyle(color: Colors.white),), style: ButtonStyle(
+                         
+                backgroundColor: MaterialStatePropertyAll<Color>(Colors.green),
+              ),),),
                     ],
                   ),
                 )
