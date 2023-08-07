@@ -102,15 +102,8 @@ class _PerMCQState extends State<PerMCQ> {
     });
   }
 
+  // Timer
 
-
-
-
-
-
-    // Timer 
-
-    
   late Timer _timer;
   int _start = 10;
 
@@ -132,31 +125,18 @@ class _PerMCQState extends State<PerMCQ> {
     );
   }
 
-
-
-   @override
+  @override
   void dispose() {
     _timer.cancel();
     super.dispose();
   }
 
-
-
-
-
-
-
-
+  List MyAnswer = [];
 
   @override
   Widget build(BuildContext context) {
-
-
-
+    print(MyAnswer);
     
-
-
-   
     return Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
@@ -184,76 +164,65 @@ class _PerMCQState extends State<PerMCQ> {
           child: Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(children: [
-
-
-
-
-                 Container(
-                  width: 400,
-                  margin: const EdgeInsets.only(bottom: 40.0),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(12),
-                    color: Colors.white,
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 5,
-                        blurRadius: 7,
-                        offset: Offset(0, 3),
-                      ),
-                    ],
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      children: [
-                  
+                Container(
+                    width: 400,
+                    margin: const EdgeInsets.only(bottom: 40.0),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12),
+                      color: Colors.white,
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey.withOpacity(0.5),
+                          spreadRadius: 5,
+                          blurRadius: 7,
+                          offset: Offset(0, 3),
+                        ),
+                      ],
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(children: [
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
-                            Text("Subject Name: Physics", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
-                  
-                  
-                             Text("Marks: 20", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                            Text(
+                              "Subject Name: Physics",
+                              style: TextStyle(
+                                  fontSize: 15, fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              "Marks: 20",
+                              style: TextStyle(
+                                  fontSize: 15, fontWeight: FontWeight.bold),
+                            ),
                           ],
                         ),
-                  
                         SizedBox(
                           height: 10,
                         ),
-                  
-                          Row(
+                        Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
                           children: [
-                            Text("Topic Name: Physics", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
-                  
-                  
-                             Text("Time: ${_start} min", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                            Text(
+                              "Topic Name: Physics",
+                              style: TextStyle(
+                                  fontSize: 15, fontWeight: FontWeight.bold),
+                            ),
+                            Text(
+                              "Time: ${_start} min",
+                              style: TextStyle(
+                                  fontSize: 15, fontWeight: FontWeight.bold),
+                            ),
                           ],
                         ),
-                  
-                  
-                  
-                  
-                  
                       ]),
-                  )),
+                    )),
 
+                SizedBox(
+                  height: 10,
+                ),
 
-                    SizedBox(height: 10,),
-
-
-
-
-
-
-
-
-
-
-
-
-                //QUESTION CARD 
+                //QUESTION CARD
                 Container(
                   width: 400,
                   margin: const EdgeInsets.only(bottom: 40.0),
@@ -301,22 +270,47 @@ class _PerMCQState extends State<PerMCQ> {
                       if (ListNumber + 1 < Question.length)
                         Container(
                           child: TextButton(
-                              onPressed: () {
-                                setState(() {
-                                  ListNumber = ListNumber + 1;
-                                });
-                              
-                              },
-                              child: Text("Next", style: TextStyle(color: Colors.white),), style: ButtonStyle(
-                         
-                backgroundColor: MaterialStatePropertyAll<Color>(Colors.pink),
-              ),),
+                            onPressed: () {
+                              setState(() {
+                                ListNumber = ListNumber + 1;
+                              });
+
+                              MyAnswer.add({
+                                "McqTitle": Question[ListNumber]["McqTitle"],
+                                "QuestionId": Question[ListNumber]
+                                    ["QuestionId"],
+                                "options": Question[ListNumber]["options"],
+                                "CorrectAnswer": Question[ListNumber]
+                                    ["CorrectAnswer"],
+                                "MyAnswer": selectedOption,
+                                "StudentID": "343434",
+                              });
+                            },
+                            child: Text(
+                              "Next",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStatePropertyAll<Color>(Colors.pink),
+                            ),
+                          ),
                         )
                       else
-                         Container(width: 150, child:TextButton(onPressed: (){}, child: Text("Complete", style: TextStyle(color: Colors.white),), style: ButtonStyle(
-                         
-                backgroundColor: MaterialStatePropertyAll<Color>(Colors.green),
-              ),),),
+                        Container(
+                          width: 150,
+                          child: TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              "Complete",
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            style: ButtonStyle(
+                              backgroundColor:
+                                  MaterialStatePropertyAll<Color>(Colors.green),
+                            ),
+                          ),
+                        ),
                     ],
                   ),
                 )
