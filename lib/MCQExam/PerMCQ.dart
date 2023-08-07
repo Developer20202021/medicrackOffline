@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 class PerMCQ extends StatefulWidget {
@@ -90,6 +92,7 @@ class _PerMCQState extends State<PerMCQ> {
 
   @override
   void initState() {
+    startTimer();
     super.initState();
   }
 
@@ -99,8 +102,61 @@ class _PerMCQState extends State<PerMCQ> {
     });
   }
 
+
+
+
+
+
+
+    // Timer 
+
+    
+  late Timer _timer;
+  int _start = 10;
+
+  void startTimer() {
+    const oneSec = const Duration(minutes: 1);
+    _timer = new Timer.periodic(
+      oneSec,
+      (Timer timer) {
+        if (_start == 0) {
+          setState(() {
+            timer.cancel();
+          });
+        } else {
+          setState(() {
+            _start--;
+          });
+        }
+      },
+    );
+  }
+
+
+
+   @override
+  void dispose() {
+    _timer.cancel();
+    super.dispose();
+  }
+
+
+
+
+
+
+
+
+
   @override
   Widget build(BuildContext context) {
+
+
+
+    
+
+
+   
     return Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
@@ -172,7 +228,7 @@ class _PerMCQState extends State<PerMCQ> {
                             Text("Topic Name: Physics", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
                   
                   
-                             Text("Time: 20", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
+                             Text("Time: ${_start} min", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),),
                           ],
                         ),
                   
@@ -249,6 +305,7 @@ class _PerMCQState extends State<PerMCQ> {
                                 setState(() {
                                   ListNumber = ListNumber + 1;
                                 });
+                              
                               },
                               child: Text("Next", style: TextStyle(color: Colors.white),), style: ButtonStyle(
                          
