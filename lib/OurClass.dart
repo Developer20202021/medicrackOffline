@@ -341,7 +341,7 @@ class _OurClassState extends State<OurClass> {
                                                       builder: (context) =>
                                                            LecturePDF(
                                                             pdfUrl:
-                                                                "${classInfo["ClassNoteLink"]}",
+                                                                classInfo["ClassNoteLink"],
                                                           )),
                                                 );
                                               },

@@ -7,10 +7,12 @@ import 'package:lottie/lottie.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
+import 'package:the_royal_academy/AdminPannel/AllClass/AllClass.dart';
 import 'package:the_royal_academy/AdminPannel/AllNewStudent.dart';
 import 'package:the_royal_academy/AdminPannel/PaymentRcv.dart';
 // import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:the_royal_academy/LecturePDF.dart';
+import 'package:the_royal_academy/MCQExam/AllQuestion.dart';
 import 'package:the_royal_academy/OurClass.dart';
 import 'package:the_royal_academy/Results.dart';
 
@@ -508,42 +510,7 @@ SizedBox(height: 30,),
 
 
        backgroundColor: Colors.white,
-       bottomNavigationBar: GNav(
-        
-  rippleColor: Colors.grey, // tab button ripple color when pressed
-  hoverColor: Colors.pink, // tab button hover color
-  haptic: true, // haptic feedback
-  tabBorderRadius: 15, 
-  tabActiveBorder: Border.all(color: Colors.black, width: 1), // tab button border
-  tabBorder: Border.all(color: Colors.pink, width: 1), // tab button border
-  tabShadow: [BoxShadow(color: Colors.white.withOpacity(0.5), blurRadius: 8)], // tab button shadow
-  curve: Curves.easeOutExpo, // tab animation curves
-  duration: Duration(milliseconds: 900), // tab animation duration
-  gap: 8, // the tab button gap between icon and text 
-  color: Colors.grey[800], // unselected icon color
-  activeColor: Colors.pink, // selected icon and text color
-  iconSize: 24, // tab button icon size
-  tabBackgroundColor: Colors.pink.withOpacity(0.1), // selected tab background color
-  padding: EdgeInsets.symmetric(horizontal: 20, vertical: 5), // navigation bar padding
-  tabs: [
-    GButton(
-      icon: Icons.home,
-      text: 'Home',
-    ),
-    GButton(
-      icon: Icons.video_file,
-      text: 'Class',
-    ),
-    GButton(
-      icon: Icons.search,
-      text: 'Search',
-    ),
-    GButton(
-      icon: Icons.abc,
-      text: 'abc',
-    )
-  ]
-),
+      
 
      
 
@@ -555,7 +522,7 @@ SizedBox(height: 30,),
       appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.pink),
       
-        title: const Text("Home", style: TextStyle(color: Colors.black),),
+        title: const Text("", style: TextStyle(color: Colors.black),),
         backgroundColor: Colors.transparent,
         bottomOpacity: 0.0,
         elevation: 0.0,
@@ -671,7 +638,31 @@ SizedBox(height: 30,),
         
         
         ),
+
+
+
         Divider(height: 3,thickness: 2,),
+
+            ListTile(title: Text("AllQuestion"),leading: Icon(Icons.text_fields, color: Colors.pink,size: 30.0,),
+
+             onTap: () {
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) => AllQuestion()));
+        },
+        
+        
+        ),
+
+
+        Divider(height: 3,thickness: 2,),
+
+            ListTile(title: Text("AllClass"),leading: Icon(Icons.book, color: Colors.pink,size: 30.0,),
+
+            onTap: () {
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) => AllClass()));
+        },
+        
+        
+        ),
       ]),
      
     ), 

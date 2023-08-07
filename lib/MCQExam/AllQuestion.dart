@@ -2,6 +2,7 @@ import 'package:expandable/expandable.dart';
 import 'package:flutter/material.dart';
 import 'package:the_royal_academy/MCQExam/AddMCQ.dart';
 import 'package:the_royal_academy/MCQExam/CreateQuestion.dart';
+import 'package:the_royal_academy/MCQExam/PerMCQ.dart';
 
 class AllQuestion extends StatefulWidget {
   const AllQuestion({super.key});
@@ -338,6 +339,14 @@ class _AllQuestionState extends State<AllQuestion> {
                                                 color: Colors.pink),
                                             trailing: TextButton(
                                               onPressed: () {
+
+
+                                                
+                                                  Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(builder: (context) => const PerMCQ()),
+                                                );
+                                                     
                                               
                                                
                                               },

@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
+import 'package:the_royal_academy/AdminPannel/StudentScanInfo.dart';
 
 
 
@@ -50,8 +51,23 @@ class _QRViewExampleState extends State<QRViewExample> {
             flex: 1,
             child: Center(
               child: (result != null)
-                  ? Text(
-                      'Barcode Type: ${describeEnum(result!.format)}   Data: ${result!.code}')
+                  ? 
+
+                  TextButton(onPressed: (){
+
+
+                      Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) =>  StudentScanInfo(StudentScanInformation: "${result!.code}")),
+                          );
+
+
+
+                  }, child: Text("Give Attendance"))
+                  
+                  
+                  // Text(
+                  //     'Barcode Type: ${describeEnum(result!.format)}   Data: ${result!.code}')
                   : Text('Scan a code'),
             ),
           )

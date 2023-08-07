@@ -9,7 +9,7 @@
     
 
    <application
-        android:label="the_royal_academy"
+        android:label="MediCrack"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

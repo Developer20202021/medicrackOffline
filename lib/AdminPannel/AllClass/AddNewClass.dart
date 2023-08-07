@@ -27,7 +27,7 @@ class _AddNewClassState extends State<AddNewClass> {
               },
               icon: Icon(Icons.chevron_left)),
           title: const Text(
-            "Upload Video",
+            "Create New Class",
             style: TextStyle(color: Colors.black),
           ),
           backgroundColor: Colors.transparent,
