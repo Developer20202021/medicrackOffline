@@ -6,6 +6,7 @@ import 'package:the_royal_academy/AdminPannel/AllNewStudent.dart';
 import 'package:the_royal_academy/AdminPannel/AllVideo/PerClassVideo.dart';
 import 'package:the_royal_academy/AdminPannel/AllVideo/UploadVideoClass.dart';
 import 'package:the_royal_academy/AdminPannel/PerStudentAttendance.dart';
+import 'package:the_royal_academy/AdminPannel/StudentScanInfo.dart';
 import 'package:the_royal_academy/AllExam.dart';
 import 'package:the_royal_academy/Home.dart';
 import 'package:the_royal_academy/MCQExam/AllQuestion.dart';
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: Home(),
+      home: StudentScanInfo(StudentScanInformation: "data"),
     );
   }
 }
