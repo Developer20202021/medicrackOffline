@@ -63,7 +63,15 @@ class _QRViewExampleState extends State<QRViewExample> {
 
 
 
-                  }, child: Text("Give Attendance"))
+                  }, child: Text("Give Attendance", style: TextStyle(
+                                                        color: Colors.white)),
+                  
+                  style: ButtonStyle(
+                                                  backgroundColor:
+                                                      MaterialStatePropertyAll<
+                                                          Color>(Colors.pink),
+                                ),
+                  )
                   
                   
                   // Text(

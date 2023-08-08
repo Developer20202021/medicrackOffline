@@ -70,9 +70,10 @@ class StudentScanInfo extends StatelessWidget {
             child: Column(
               children: [
 
+                
+                SizedBox(height: 20,),
 
-
-                Text(StudentScanInformation, style:TextStyle(fontSize: 16, fontWeight: FontWeight.bold) ,),
+                Text("Student ID:${StudentScanInformation}", style:TextStyle(fontSize: 16, fontWeight: FontWeight.bold) ,),
                 
         
         
